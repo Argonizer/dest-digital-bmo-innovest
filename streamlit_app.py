@@ -34,10 +34,10 @@ def render_profile_page(entity_name):
         st.experimental_rerun() 
         
 # Main application logic 
-    if "selected_entity" not in st.session_state: 
-            st.session_state.selected_entity = None 
+if "selected_entity" not in st.session_state: 
+    st.session_state.selected_entity = None 
         
-    if st.session_state.selected_entity: 
-        render_profile_page(st.session_state.selected_entity) 
-    else: 
-        render_main_page()
+if st.session_state.selected_entity: 
+    render_profile_page(st.session_state.selected_entity) 
+else: 
+    render_main_page()
