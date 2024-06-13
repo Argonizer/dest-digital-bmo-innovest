@@ -5,14 +5,14 @@ import altair as alt
 from datetime import datetime, timedelta
 
 # Define some sample entities 
-entities = [ {"name": "Entity 1", "description": "Description of Entity 1"},
-            {"name": "Entity 2", "description": "Description of Entity 2"},
-            {"name": "Entity 3", "description": "Description of Entity 3"},
-            {"name": "Entity 4", "description": "Description of Entity 4"}, ] 
+entities = [ {"name": "Entity 1", "description": "Description of Entity 1", "image":"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305"},
+            {"name": "Entity 2", "description": "Description of Entity 2", "image":"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305"},
+            {"name": "Entity 3", "description": "Description of Entity 3", "image":"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305"},
+            {"name": "Entity 4", "description": "Description of Entity 4", "image":"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305"} ] 
 
 # Function to render the main page with the grid of entities 
 def render_main_page(): 
-    st.title("Entities Grid") 
+    st.title("Small Businesses Profiles") 
     cols = st.columns(2) 
 # Adjust the number of columns as needed 
     for i, entity in enumerate(entities): 
