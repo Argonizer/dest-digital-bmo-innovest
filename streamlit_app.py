@@ -17,7 +17,7 @@ def render_main_page():
 # Adjust the number of columns as needed 
     for i, entity in enumerate(entities): 
         with cols[i % 2]: 
-            if st.button(entity["name"]): 
+            if st.image(entity["image"], "Alt"): 
                 st.session_state.selected_entity = entity["name"] 
                 st.experimental_rerun() 
 
